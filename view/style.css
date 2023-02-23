@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbr {
+    background-color: #aca8a8;
+    /* width: 380px; */
+    font-family: 'Fjalla One', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.navbr nav {
+    padding: 36px;
+}
+
+.navbr nav li {
+    list-style: none;
+    font-size: 25px;
+    padding: 33px 0;
+}
+
+.navbr nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.info {
+    /* background-color: green; */
+    width: 80vw;
+    margin: 140px auto;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.about {
+    font-size: 2.5em;
+    display: flex;
+    
+    
+}
+
+
+.typewriter {
+	width: 16ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width:16ch; 
+  }
+}
+
+
+.moreabout {
+    font-size: 1.4em;
+    margin: 10px 0;
+    font-family: 'Fjalla One', sans-serif;
+
+}
+.buttons {
+    margin-top: 36px;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 9px;
+    border-radius: 20px;
+    color: white;
+    background-color: blueviolet;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 3px 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+.btn-sm {
+    margin: 7px 0;
+    font-size: 14px;
+    padding: 9px;
+    border-radius: 14px;
+
+}
+
+
+.devpic img {
+    height: 60vh;
+}
+
+
+/* contact-page */
+.contactform {
+    padding: 0 23px;
+    /* padding-top: 45px; */
+    margin:  88px;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+    /* text-align: center; */
+
+}
+
+.contactform form div {
+    padding: 10px 0;
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-msg-input {
+    height: 150px;
+}
+
+.contactform form div input,
+textarea {
+    /* width: 25vw; */
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 4px;
+    margin: 4px 0px;
+}
+.contactform form {
+    margin: 0 40px;
+}
+
+#emailHelp {
+    font-size: 10px;
+    color: #31199e;
+    margin: 0 5px;
+    padding: 0 0;
+
+}
+
+/* //////////// */
+.blogItem {
+    margin: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}
+.blogContainer{
+    margin:  82px;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    margin: 23px;
+
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro{
+    margin:  88px;
+}
+
+.intro h2 {
+    font-family: 'Fjalla One', sans-serif;
+    margin: 12px 12px;
+}
+
+.intro p {
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px 12px;
+
+}
+
+.skillContainer {
+    padding: 12px;
+   
+}
+
+.skillitem {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+
+.skill {
+    width: 300px;
+    height: 11px;
+    border-radius: 3px;
+    background-color: red;
+}
+
+
+.hundered {
+    width:299px;
+}
+
+.fifty {
+    width: 210px;
+}
+
+.t5 {
+    width: 100px;
+}
+
+.navbrGo {
+    transform: translate(-400px ,0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+    top: 10px;
+}
+.ham{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.cross {
+    margin-left: 135px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1200px) {
+    /* *{background-color: red;} */
+    .buttons{
+        font-size: 7px;
+    }
+    .devinfo{
+        font-size: 11px;
+    }
+    .devpic{
+        display: none;
+    }
+    
+    .intro ,.blogContainer ,.contactform{
+        margin:  50px 8px;
+    }
+
+    /* .navbr{
+        translate: -400px 0px;
+        position: absolute;
+    } */
+
+}

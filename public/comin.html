@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../view/style.css" />
+  <title>!-!-!-!-!-!</title>
+</head>
+<style>
+  body,
+  html {
+    height: 100vh;
+    margin: 0;
+  }
+
+  .bgimg {
+    background-image: url('/img/fun.jpg');
+    height: 100vh;
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: rgb(114, 81, 81);
+
+  }
+
+
+
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(90, 79, 116);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  .writer {
+	width: 37.5ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid rgb(90, 79, 116);
+	animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color:rgb(90, 79, 116); 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width:37.5ch; 
+  }
+}
+
+  h1 {
+    font-family: 'Source Code Pro', monospace;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  /* left: 45em; */
+
+}
+
+
+
+</style>
+
+<body>
+
+  <div class="bgimg">
+  </div>
+  <div class="middle writer">
+    
+      <h1>Work-in-progress:)<h1>
+    
+  </div>
+<hr>
+
+<div class="bottom">  <button class="btn">
+  <a href="/">HOME</a></button></div>
+  
+</body>
+
+</html>

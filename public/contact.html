@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../view/style.css" />
+  <title>Contact</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbr navbrGo">
+      <nav>
+        <ul>
+          <li class="item"><a href="/"> Home</a></li>
+          <li class="item"><a href="/public/Intro.html">My Intro</a></li>
+          <li class="item"><a href="/public/comin.html">Blog</a></li>
+          <li class="item"><a href="/public/contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="hamburger">
+        <img class="ham" src="../img/ham.png" alt="" width="23px">
+        <img class="cross" src="../img/cross.png" alt="" width="23px">
+      </div>
+      <div class="contactform">
+        <h1>Contact me for work/general Enquiries</h1>
+        <form action="https://formspree.io/f/mdojqqll" method="POST">
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Name</label>
+            <input name="Name" type="text" class="form-control" id="clientemail" aria-describedby="emailHelp" required
+              autocomplete="off">
+
+          </div>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Email address</label>
+            <input name="email" type="Email address" class="form-control" id="clientemail" aria-describedby="emailHelp"
+              required autocomplete="off">
+            <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="clientphn" class="form-label">Phone</label>
+            <input type="number" name="Phone" class="form-control" id="clientphn" required autocomplete="off">
+          </div>
+          <div class="mb-3 ">
+            <label class="form-check-label" for="clientmsg">Message</label>
+            <textarea type="text" name="Message" class="form-msg-input" id="clientmsg" required min="5"
+              autocomplete="off"></textarea>
+          </div>
+          <button type="submit" class="btn btn-sm">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="../view/script.js"></script>
+</body>
+
+</html>
